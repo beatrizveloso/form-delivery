@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cadastro de Delivery</h1>
+        <h1>Cadastro de Delivery</h1>
+        <div class="style">
     <form>
-        <label>Endereço</label> <input type="text" placeholder="Digite o endereço" size="40" maxlength="150"><br> <br>
-        <label>Data do pedido</label> <input type="date"> <br> <br>
-        <label>Senha de Autorização</label> <input type="password" placeholder="Insira sua senha" name="senha"> <br> <br>
+        <label>Endereço</label> <input type="text" placeholder="Digite o endereço" size="40" maxlength="150"> <br><br>
+        <label>Data do pedido</label> <input type="date"> <br><br>
+        <label>Senha de Autorização</label> <input type="password" name="senha"/> <br> <br>
         <label>Data e hora do Pedido</label> <input type="datetime-local" name="Data e hora do pedido"> <br> <br>
+
         <input type="radio" id="alternativa1" name="Alternativa" value="A"/> <label for="alternativa1">Casa</label>
         <input type="radio" id="alternativa2" name="Alternativa" value="B"/> <label for="alternativa2">Prédio</label>
         <input type="radio" id="alternativa3" name="Alternativa" value="C"/> <label for="alternativa3">Comércio</label>
-        <input type="radio" id="alternativa4" name="Alternativa" value="D"/> <label for="alternativa4">Nenhuma das opções</label>
+        <input type="radio" id="alternativa4" name="Alternativa" value="D"/> <label for="alternativa4">Nenhuma das opções</label> <br> <br>
+
+        <input type="checkbox" id="Alternativa1" name="Alternativa1" value="A"/> <label for="alternativa1">Casa</label>
+        <input type="checkbox" id="Alternativa2" name="Alternativa1" value="B"/> <label for="alternativa2">Prédio</label>
+        <input type="checkbox" id="Alternativa3" name="Alternativa1" value="C"/> <label for="alternativa3">Comércio</label>
+        <input type="checkbox" id="Alternativa4" name="Alternativa1" value="D"/> <label for="alternativa4">Nenhuma das opcões</label> <br> <br>
+
+        <label>Tipo de Endereço</label> 
+        <select name="tp_endereco" id="tp_endereco">
+            <option value="AB">Casa</option>
+            <option value="AC">Prédio</option>
+            <option value="AD">Comércio</option>
+            <option value="AE">Nenhuma das Opções</option>
+        </select> <br> <br>
+
+        <textarea name="texto" id="texto" rows="10" cols="30" ></textarea> <br> 
+        <input type="submit" name="Enivar" value="Salvar"/> <br> <br>
+
+        <input type="button" name="Chamar" value="Chamar" onclick="alert('Primeira Mensagem!!!')" />
+
     </form>
+    </div>
 
 </body>
 </html>
