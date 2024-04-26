@@ -3,15 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <script>
+        function calc(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value) 
+            soma = num1 + num2 
+            document.getElementById('idResult').value = soma
+        }
+        function sub(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value) 
+            sub = num1 - num2 
+            document.getElementById('idResult').value = sub
+        }
+        function mult(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value) 
+            mult = num1 * num2 
+            document.getElementById('idResult').value = mult
+        }
+        function div(){
+            var num1 = parseInt(document.getElementById('idNum1').value)
+            var num2 = parseInt(document.getElementById('idNum2').value) 
+            div = num1 / num2 
+            document.getElementById('idResult').value = div
+        }
+    </script>
+
 </head>
 <body>
     <form>
-        <label> Número 1 </label>
+        <h1> Calculadora </h1>
+        <label> Digite o número 1: </label>
         <input type="text" id="idNum1" size="5">
-        <br> <br>
-        <label> Número 2 </label>
-        <input type="text" id="idNum2">
-    </form>
+        <br><br>
+        <label> Digite o número 2: </label>
+        <input type="text" id="idNum2" size="5">
+        <br><br>
+        <label> Resultado </label>
+        <input type="text" id="idResult" size="5">
+        <br><br>
+        <input type="button" value="Somar" onclick="calc()">
+        <input type="button" value="Subtrair" onclick="sub()">
+        <input type="button" value="Multiplicação" onclick="mult()">
+        <input type="button" value="Divisão" onclick="div()">
 </body>
 </html>
